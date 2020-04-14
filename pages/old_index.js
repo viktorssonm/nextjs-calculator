@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const Home = () => (
   <div className="container">
@@ -59,7 +59,6 @@ const Home = () => (
 
     <style jsx>{`
       .container {
-        min-height: 100vh;
         padding: 0 0.5rem;
         display: flex;
         flex-direction: column;
@@ -198,6 +197,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;

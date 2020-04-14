@@ -1,31 +1,36 @@
 .container {
-  font-family: "Arial";
   background-color: black;
-  min-height: 100vh;
-  min-width: 100vh;
+  height: 100vh;
+}
+
+.calculator {
+  font-family: "Arial";
   padding: 5%;
+  height: "80%";
+  width: "80%";
 }
 
 .keyboard {
   display: grid;
   align-content: center;
   justify-content: center;
-  grid-template-columns: repeat(4, 80px);
-  grid-template-rows: repeat(5, 80px);
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
   row-gap: 1%;
   column-gap: 1%;
 }
 
 .display {
-  display: flex;
   height: 100px;
   color: white;
   font-size: 60px;
   width: 320px;
   margin: 0 auto;
   justify-content: flex-end;
-  padding-left: 20%;
-  padding-right: 20%;
+  overflow: hidden;
+  text-align: right;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
 }
 
 .digit {
